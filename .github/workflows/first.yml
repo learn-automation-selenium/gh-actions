@@ -19,4 +19,4 @@ jobs:
       - name: Print greeting
         run: echo "Hello World!"
       - name: Print Good Bye
-        run: echo "Good Bye!!"
+        run: echo "Good Bye!"
