@@ -1,9 +1,13 @@
-name: First Actions
-on: workflow_dispatch
+name: first-action
+on: push
 jobs:
-    test-actions:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Get code
-            uses: actions/checkout@v3
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get code
+        uses: actions/checkout@v3
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
             
